@@ -27,7 +27,7 @@ if st.checkbox("Show Dataframe"):
     st.dataframe(data=mpg_df)
 
 #left_column, right_column = st.columns(2)
-left_column, middle_column, right_column = st.columns([3, 1, 3])
+left_column, middle_column, right_column = st.columns([3, 3, 3])
 
 years = ["All"]+sorted(pd.unique(mpg_df['year']))
 year = left_column.selectbox("Choose a Year", years)
