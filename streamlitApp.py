@@ -36,7 +36,7 @@ show_means = middle_column.radio(
     label='Show Class Means', options=['Yes', 'No'], horizontal=True)
 
 plot_types = ["Matplotlib", "Plotly"]
-plot_type = right_column.radio("Choose Plot Type", plot_types, horizontal=True)
+plot_type = right_column.radio(label="Choose Plot Type", options= plot_types, horizontal=True)
 
 if year == "All":
     reduced_df = mpg_df
